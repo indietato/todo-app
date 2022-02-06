@@ -27,14 +27,6 @@ function App() {
   }, []);
 
   const addItemHandler = async (text) => {
-    setTodoList((preveItems) => {
-      const updatedTodoList = [...preveItems];
-      updatedTodoList.unshift({
-        status: false,
-        text,
-      });
-      return updatedTodoList;
-    });
     await addDoc(todosCollectionRef, { status: false, text });
     getTodos();
   };
