@@ -1,0 +1,17 @@
+.todo-list-wrapper {
+  height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.todo-list-wrapper ul {
+  margin: 0;
+  width: 320px;
+  padding: 0;
+  list-style: none;
+  padding-top: 22px;
+  margin-top: 50px;
+}
+.todo-list__empty img {
+  width: 100%;
+}
